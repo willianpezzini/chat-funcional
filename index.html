@@ -11,6 +11,8 @@
 
 <body>
     <main class="container flex flex--direction--row">
+
+        <!-- Lateral esquerda da pagina, com varias conversas -->
         <div class="left--chats flex--direction--column flex--1 ">
             <div class="search--bar flex flex--direction--row ">
                 <div class="flex justify--content--center flex--1 align--items--center">
@@ -44,11 +46,13 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
+                    <div
+                        class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             19:48
                         </div>
-                        <div class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
+                        <div
+                            class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
                             1
                         </div>
                     </div>
@@ -72,18 +76,20 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
+                    <div
+                        class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             18:30
                         </div>
-                        <div class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
+                        <div
+                            class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
                             2
                         </div>
                     </div>
                 </div>
             </div>
             <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
+                <div class="contact--area flex gap--5 background--light--grey">
                     <div class="flex justify--content--center align--items--center">
                         <img src="./src/assets/images/Avatar 2.png" class="avatar--left--bar flex--1" alt="">
                     </div>
@@ -100,7 +106,8 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div
+                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             18:16
                         </div>
@@ -125,7 +132,8 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div
+                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             18:02
                         </div>
@@ -150,7 +158,8 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div
+                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             17:42
                         </div>
@@ -175,7 +184,8 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div
+                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             17:08
                         </div>
@@ -200,7 +210,8 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div
+                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             16:15
                         </div>
@@ -225,7 +236,8 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div
+                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             Wed
                         </div>
@@ -250,7 +262,8 @@
 
                         </div>
                     </div>
-                    <div class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div
+                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
                         <div class="font--family font--size--12 font--weight--regular">
                             Wed
                         </div>
@@ -260,8 +273,94 @@
         </div>
         </div>
 
+        <!-- Parte central da página, com uma conversa aberta -->
         <div class="flex--direction--column flex--3-5 center--chat">
-            Centro Principal
+
+            <!-- Topo da pagina com conversa selecionada -->
+            <div class="top--bar flex">
+                <div class="top--bar--left flex flex--3">
+                    <div class=" flex align--items--center gap--10  flex--1">
+                        <div class="avatar--top--bar flex padding--10">
+                            <img src="./src/assets/images/Avatar 2.png" alt="">
+                        </div>
+                        <div
+                            class="chat-atual flex flex--direction--column align--items--center flex--3 align--items--start">
+                            <div class="contact--name font--family font--weight--bold font--size--16">
+                                David Moore
+                            </div>
+                            <div
+                                class="tempo--conversa font--family font--size--14 font--weight--regular line--height--18 color--grey">
+                                last seen 5 mins ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top--bar--right flex flex--1 flex--direction--row align--content--end align--items--center">
+                    <div class="icons--top--bar flex flex--direction--row align--items--center gap--10 padding--10">
+                        <img src="./src/assets/icons/search icon.svg" alt="">
+                        <img src="./src/assets/icons/call icon.svg" alt="">
+                        <img src="./src/assets/icons/more icon.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Seção das mensagens -->
+            <div class="flex flex--direction--row background--messages align--items--center">
+                <div class="flex flex--direction--column div--container--messages width--100">
+                    <div class="flex flex--direction--column flex--6 justify--content--end width--100">
+                        <div class="flex flex--direction--column align--items--center justify--content--center width--100 gap--10">
+                            <div
+                                class="data--chat flex flex--direction--row align--items--center justify--content--center font--family font--size--16 font--weight--regular color--white">
+                                Today
+                            </div>
+
+                            <!-- Mensagem de outra pessoa -->
+                            <div class="flex flex--direction--row justify--content--start width--100">
+                                <div class="message--other background--white flex flex--direction--column">
+                                    <div class="message font--family color--rich--black">
+                                            OMG 😲 do you remember what you did last night at the work night out? 
+                                    </div>
+                                    <div class="font--family font--size--12 font--weight--regular flex justify--content--end color--rich--black flex flex--direction--row align--items--center gap--5">
+                                       ❤️18:12 
+                                       <img src="./src/assets/icons/check Icon black.png" class="check--icon" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Sua mensagem -->
+                            <div class="flex flex--direction--column width--100 align--items--end gap--10">
+                                <div class="message--you background--green flex flex--direction--column">
+                                    <div class="message font--family ">
+                                        no hahaha
+                                    </div>
+                                    <div class="font--family font--size--12 font--weight--regular flex justify--content--end flex flex--direction--row align--items--center gap--5 color--white">
+                                        18:16 
+                                       <img src="./src/assets/icons/Check Icon.svg" class="check--icon" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="message--you background--green flex flex--direction--column">
+                                    <div class="message font--family ">
+                                        no hahaha
+                                    </div>
+                                    <div class="font--family font--size--12 font--weight--regular flex justify--content--end flex flex--direction--row align--items--center gap--5 color--white">
+                                        18:16 
+                                       <img src="./src/assets/icons/Check Icon.svg" class="check--icon" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input--bar flex flex--direction--row align--items--center gap--5 padding--5 background--white">
+                        <img src="./src/assets/icons/Emoji Icon.svg" class="icon--24x24 cursor--pointer" alt="">
+                        <input type="text" placeholder="Mensagem" class="width--100 input--area font--family font--size--16 font--weight--regular">
+                        <img src="./src/assets/icons/Send Icon.svg" class="icon--24x24 cursor--pointer" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>

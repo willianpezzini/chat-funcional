@@ -45,6 +45,9 @@
     color: #ffffff;
 }
 
+.color--rich--black {
+    color: #011627;
+}
 .font--family {
     font-family: 'Inter', sans-serif;
 }
@@ -69,8 +72,16 @@
     font-weight: 400;
 }
 
+.line--height--18 {
+    line-height: 18px;
+}
+
 .gap--5 {
     gap: 5px;
+}
+
+.gap--10 {
+    gap: 10px;
 }
 
 .padding--top--10 {
@@ -81,16 +92,20 @@
     padding-left: 5px;
 }
 
-.left--chats {
-    border: 1px solid red;
+.padding--5 {
+    padding: 5px;
 }
 
-.center--chat {
-    border: 1px solid blue;
+.padding--10 {
+    padding: 10px;
+}
+
+.cursor--pointer {
+    cursor: pointer;
 }
 
 .search--bar {
-    height: 56px;
+    height: 70px;
     gap: 5px;
     padding-right: 16px;
 }
@@ -120,4 +135,97 @@
     background-color: #F5F5F5;
 }
 
+.top--bar {
+    height: 70px;
+    width: 100%;
+   
+}
 
+.top--bar--left {
+    height: 70px;
+
+}
+
+.top--bar--right {
+    height: 70px;
+
+}
+
+.icons--top--bar  img{
+    width: 24px;
+    height: 24px;
+    padding: 16px;
+}
+
+.icons--top--bar {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.icons--top--bar img:hover {
+    cursor: pointer;
+}
+
+.background--messages {
+    background-color: #8BABD8;
+    width: 100%;
+    height: 94.5%;
+}
+
+.div--container--messages {
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    height: 94.5%;
+}
+
+.data--chat {
+    width: 71px;
+    height: 28px;
+    border-radius: 12px;
+    padding: 4px 12px;
+    gap: 4px;
+    background-color: hsla(215, 50%, 48%, 0.6);
+}
+
+.message--other {
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 4px 12px;
+}
+
+.message--you {
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 4px 12px;
+    gap: 1px;
+}
+
+.message {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.check--icon {
+    width: 14px;
+    height: 14px;
+}
+
+.input--bar {
+    margin-top: 10px;
+    height: 56px;
+    border-radius: 12px;
+}
+
+.input--area {
+    border: 0;
+    color: #707991;
+    outline: 0;
+    
+}
+
+.icon--24x24 {
+    width: 24px;
+    height: 24px;
+}
