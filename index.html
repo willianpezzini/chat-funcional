@@ -7,277 +7,165 @@
     <title>Chat</title>
     <link rel="stylesheet" href="./src/assets/css/style.css">
     <link rel="stylesheet" href="./src/assets/css/ui--kit.css">
+    <script src="./src/assets/script/script.js"></script>
 </head>
 
-<body>
-    <main class="container flex flex--direction--row">
+<body class="container flex flex--direction--row flex--1">
 
-        <!-- Lateral esquerda da pagina, com varias conversas -->
-        <div class="left--chats flex--direction--column flex--1 ">
-            <div class="search--bar flex flex--direction--row ">
-                <div class="flex justify--content--center flex--1 align--items--center">
-                    <img src="./src/assets/icons/Menu Icon.svg" alt="">
+
+    <!-- Lateral esquerda da pagina, com varias conversas -->
+    <aside class="left--chats flex--direction--column flex--1 ">
+        <div class="search--bar flex flex--direction--row ">
+            <div class="flex justify--content--center flex--1 align--items--center">
+                <img src="./src/assets/icons/Menu Icon.svg" alt="">
+            </div>
+
+            <div class="flex justify--content--center flex--5 align--items--center">
+                <div class="search flex align--items--center background--light--grey ">
+                    <img src="./src/assets/icons/search icon.svg" alt="">
+                    <input type="search" placeholder="Buscar Contato">
                 </div>
+            </div>
+        </div>
 
-                <div class="flex justify--content--center flex--5 align--items--center">
-                    <div class="search flex align--items--center background--light--grey ">
-                        <img src="./src/assets/icons/search icon.svg" alt="">
-                        <input type="search" placeholder="Search">
+        <div class="div--contacts flex flex--direction--column">
+            <div class="contact--area flex gap--5">
+                <div class="flex justify--content--center align--items--center">
+                    <img src="./src/assets/images/Avatar.png" class="avatar--left--bar flex--1" alt="">
+                </div>
+                <div class="flex flex--direction--column flex--3 justify--content--center">
+                    <div class="flex flex--direction--column justify--content--center">
+                        <div class="detalhes--contato flex flex--3">
+                            <div class="flex font--size--16 font--family font--weight--bold align--items--center">
+                                Chatgram
+                            </div>
+                            <img src="./src/assets/icons/verified bot.svg" alt="">
+                        </div>
+                        <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
+                            Chatgram Web was updated.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
+                    <div class="font--family font--size--12 font--weight--regular">
+                        19:48
+                    </div>
+                    <div
+                        class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
+                        1
                     </div>
                 </div>
             </div>
-
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Chatgram
-                                </div>
-                                <img src="./src/assets/icons/verified bot.svg" alt="">
+            <div class="contact--area flex gap--5">
+                <div class="flex justify--content--center align--items--center">
+                    <img src="./src/assets/images/Avatar 1.png" class="avatar--left--bar flex--1" alt="">
+                </div>
+                <div class="flex flex--direction--column flex--3 justify--content--center">
+                    <div class="flex flex--direction--column justify--content--center">
+                        <div class="detalhes--contato flex flex--3">
+                            <div class="flex font--size--16 font--family font--weight--bold align--items--center">
+                                Jessica Drew
                             </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                Chatgram Web was updated.
-                            </div>
-
                         </div>
+                        <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
+                            Ok, see you later
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
+                    <div class="font--family font--size--12 font--weight--regular">
+                        18:30
                     </div>
                     <div
-                        class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            19:48
-                        </div>
-                        <div
-                            class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
-                            1
-                        </div>
+                        class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
+                        2
                     </div>
                 </div>
             </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 1.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Jessica Drew
-                                </div>
+            <div class="contact--area flex gap--5 background--light--grey">
+                <div class="flex justify--content--center align--items--center">
+                    <img src="./src/assets/images/Avatar 2.png" class="avatar--left--bar flex--1" alt="">
+                </div>
+                <div class="flex flex--direction--column flex--3 justify--content--center">
+                    <div class="flex flex--direction--column justify--content--center">
+                        <div class="detalhes--contato flex flex--3">
+                            <div class="flex font--size--16 font--family font--weight--bold align--items--center">
+                                David Moore
                             </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                Ok, see you later
-                            </div>
+                        </div>
+                        <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
+                            You: i don't remember anything 😄
+                        </div>
 
-                        </div>
                     </div>
-                    <div
-                        class="flex flex--direction--column flex--1 justify--content--center align--items--center gap--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            18:30
-                        </div>
-                        <div
-                            class="quantity--messages font--family font--size--12 font--weight--regular background--green border--radius--100 align--items--center justify--content--center flex color--white">
-                            2
-                        </div>
+                </div>
+                <div
+                    class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div class="font--family font--size--12 font--weight--regular">
+                        18:16
                     </div>
                 </div>
             </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5 background--light--grey">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 2.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    David Moore
-                                </div>
+            <div class="contact--area flex gap--5">
+                <div class="flex justify--content--center align--items--center">
+                    <img src="./src/assets/images/Avatar 5.png" class="avatar--left--bar flex--1" alt="">
+                </div>
+                <div class="flex flex--direction--column flex--3 justify--content--center">
+                    <div class="flex flex--direction--column justify--content--center">
+                        <div class="detalhes--contato flex flex--3">
+                            <div class="flex font--size--16 font--family font--weight--bold align--items--center">
+                                Office Chat
                             </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                You: i don't remember anything 😄
-                            </div>
+                        </div>
+                        <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
+                            Lewis: All done mate 😆
+                        </div>
 
-                        </div>
                     </div>
-                    <div
-                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            18:16
-                        </div>
+                </div>
+                <div
+                    class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div class="font--family font--size--12 font--weight--regular">
+                        17:08
                     </div>
                 </div>
             </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 3.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Grag James
-                                </div>
+            <div class="contact--area flex gap--5">
+                <div class="flex justify--content--center align--items--center">
+                    <img src="./src/assets/images/Avatar 8.png" class="avatar--left--bar flex--1" alt="">
+                </div>
+                <div class="flex flex--direction--column flex--3 justify--content--center">
+                    <div class="flex flex--direction--column justify--content--center">
+                        <div class="detalhes--contato flex flex--3">
+                            <div class="flex font--size--16 font--family font--weight--bold align--items--center">
+                                Art Class
                             </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                I got a job at SpaceX 🎉 🚀
-                            </div>
+                        </div>
+                        <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
+                            Emily: Editorial>
+                        </div>
 
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            18:02
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 4.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Emily Dorson
-                                </div>
-                            </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                Table for four, 5PM. Be there
-                            </div>
-
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            17:42
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 5.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Office Chat
-                                </div>
-                            </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                Lewis: All done mate 😆
-                            </div>
-
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            17:08
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 6.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Announcements
-                                </div>
-                            </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                Channel created
-                            </div>
-
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            16:15
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 7.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Litte Sister
-                                </div>
-                            </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                Tell mom i will be home of tea💜
-                            </div>
-
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            Wed
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="chats--list flex flex--direction--column">
-                <div class="contact--area flex gap--5">
-                    <div class="flex justify--content--center align--items--center">
-                        <img src="./src/assets/images/Avatar 8.png" class="avatar--left--bar flex--1" alt="">
-                    </div>
-                    <div class="flex flex--direction--column flex--3 justify--content--center">
-                        <div class="flex flex--direction--column justify--content--center">
-                            <div class="detalhes--contato flex flex--3">
-                                <div class="flex font--size--16 font--family font--weight--bold align--items--center">
-                                    Art Class
-                                </div>
-                            </div>
-                            <div class="ultima-conversa font--size--14 font--family font--weight--regular color--grey">
-                                Emily: <img src="./src/assets/icons/Frame 1.png"> Editorial>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
-                        <div class="font--family font--size--12 font--weight--regular">
-                            Wed
-                        </div>
+                <div
+                    class="flex flex--direction--column flex--1  align--items--center  gap--5 padding--top--10 padding--left--5">
+                    <div class="font--family font--size--12 font--weight--regular">
+                        Wed
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+    </aside>
+
+    <main class= "flex--3-5">
 
         <!-- Parte central da página, com uma conversa aberta -->
-        <div class="flex--direction--column flex--3-5 center--chat">
+        <div class="flex--direction--column  center--chat">
 
             <!-- Topo da pagina com conversa selecionada -->
-            <div class="top--bar flex">
+            <div class="top--bar flex background--white">
                 <div class="top--bar--left flex flex--3">
                     <div class=" flex align--items--center gap--10  flex--1">
                         <div class="avatar--top--bar flex padding--10">
@@ -297,7 +185,12 @@
                 </div>
                 <div class="top--bar--right flex flex--1 flex--direction--row align--content--end align--items--center">
                     <div class="icons--top--bar flex flex--direction--row align--items--center gap--10 padding--10">
-                        <img src="./src/assets/icons/search icon.svg" alt="">
+                        <div class="flex justify--content--center flex--5 align--items--center">
+                            <div class="search flex align--items--center background--light--grey ">
+                                <img src="./src/assets/icons/search icon.svg" alt="">
+                                <input type="search" placeholder="Buscar Mensagem" id="search--message">
+                            </div>
+                        </div>
                         <img src="./src/assets/icons/call icon.svg" alt="">
                         <img src="./src/assets/icons/more icon.svg" alt="">
                     </div>
@@ -306,63 +199,56 @@
             </div>
 
             <!-- Seção das mensagens -->
-            <div class="flex flex--direction--row background--messages align--items--center">
+            <div class="flex secao--mensagens flex--direction--column background--messages align--items--center justify--content--end">
                 <div class="flex flex--direction--column div--container--messages width--100">
-                    <div class="flex flex--direction--column flex--6 justify--content--end width--100">
-                        <div class="flex flex--direction--column align--items--center justify--content--center width--100 gap--10">
+                    <div class=" secao--das--mensagens flex flex--direction--column flex--6 justify--content--end align--items--center">
+                        <div class="div--messages flex flex--direction--column align--items--center justify--content--center width--100 gap--10">
                             <div
                                 class="data--chat flex flex--direction--row align--items--center justify--content--center font--family font--size--16 font--weight--regular color--white">
                                 Today
                             </div>
 
                             <!-- Mensagem de outra pessoa -->
-                            <div class="flex flex--direction--row justify--content--start width--100">
-                                <div class="message--other background--white flex flex--direction--column">
-                                    <div class="message font--family color--rich--black">
-                                            OMG 😲 do you remember what you did last night at the work night out? 
+                            <div class="flex flex--direction--row justify--content--start width--100 align--items--center gap--5">
+                                <div class=" message message--other background--white flex flex--direction--column">
+                                    <div class="messagens font--family color--rich--black">
+                                        OMG 😲 do you remember what you did last night at the work night out?
                                     </div>
-                                    <div class="font--family font--size--12 font--weight--regular flex justify--content--end color--rich--black flex flex--direction--row align--items--center gap--5">
-                                       ❤️18:12 
-                                       <img src="./src/assets/icons/check Icon black.png" class="check--icon" alt="">
+                                    <div
+                                        class="font--family font--size--12 font--weight--regular flex justify--content--end color--rich--black flex flex--direction--row align--items--center gap--5">
+                                        18:12
+                                        <img src="./src/assets/icons/check-icon-black.png" class="check--icon" alt="">
                                     </div>
                                 </div>
-
                             </div>
 
                             <!-- Sua mensagem -->
-                            <div class="flex flex--direction--column width--100 align--items--end gap--10">
-                                <div class="message--you background--green flex flex--direction--column">
-                                    <div class="message font--family ">
+                            <div class=" flex flex--direction--row--reverse width--100 justify--content--start gap--5 align--items--center">
+                                <div class="message message--you background--green flex flex--direction--column">
+                                    <div class="messagens font--family ">
                                         no hahaha
                                     </div>
-                                    <div class="font--family font--size--12 font--weight--regular flex justify--content--end flex flex--direction--row align--items--center gap--5 color--white">
-                                        18:16 
-                                       <img src="./src/assets/icons/Check Icon.svg" class="check--icon" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="message--you background--green flex flex--direction--column">
-                                    <div class="message font--family ">
-                                        no hahaha
-                                    </div>
-                                    <div class="font--family font--size--12 font--weight--regular flex justify--content--end flex flex--direction--row align--items--center gap--5 color--white">
-                                        18:16 
-                                       <img src="./src/assets/icons/Check Icon.svg" class="check--icon" alt="">
+                                    <div
+                                        class="font--family font--size--12 font--weight--regular flex justify--content--end flex flex--direction--row align--items--center gap--5 color--white">
+                                        18:16
+                                        <img src="./src/assets/icons/check-icon-white.svg" class="check--icon" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div
+                    class="input--bar flex flex--direction--row align--items--center gap--5 padding--5 background--white">
+                    <img src="./src/assets/icons/Emoji Icon.svg" class="icon--24x24 cursor--pointer" alt="">
 
-                    <div class="input--bar flex flex--direction--row align--items--center gap--5 padding--5 background--white">
-                        <img src="./src/assets/icons/Emoji Icon.svg" class="icon--24x24 cursor--pointer" alt="">
-                        <input type="text" placeholder="Mensagem" class="width--100 input--area font--family font--size--16 font--weight--regular">
-                        <img src="./src/assets/icons/Send Icon.svg" class="icon--24x24 cursor--pointer" alt="">
-                    </div>
+                    <input type="text" id="inputMenssagem"
+                        class="width--100 text--fild font--family font--size--16 font--weight--regular">
+
+                    <img src="./src/assets/icons/Send Icon.svg" class="icon--24x24 cursor--pointer" alt="">
                 </div>
             </div>
         </div>
-
     </main>
 </body>
 
