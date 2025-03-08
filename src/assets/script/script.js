@@ -151,16 +151,20 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(mensagem);
         let areaEmojis = mensagem.querySelector(".area--emojis");
 
-
-        if (areaEmojis && areaEmojis.children.length > 1) {
-            areaEmojis.remove();
-        }
-
+        // Cria a area do emoji se ela não existir
         if (!areaEmojis) {
             areaEmojis = document.createElement("div");
             areaEmojis.classList.add("area--emojis");
             mensagem.appendChild(areaEmojis);
         }
+
+        // Remove os emojis de escolhas se um deles já tiver sido selecionado
+        let emojisExistentes = areaEmojis.querySelectorAll(".emoji--opcao");
+        if (emojisExistentes.length > 0) {
+            emojisExistentes.forEach((emoji) => emoji.remove());
+            return;
+        }
+
 
         // percorre a lista de emojis e add eles
         listaEmojis.forEach((emoji) => {
@@ -168,33 +172,20 @@ document.addEventListener('DOMContentLoaded', () => {
             emojiElement.classList.add("emoji--opcao", "cursor--pointer");
             emojiElement.innerHTML = emoji;
 
+            // Captura o evento de click no emoji, adiciona a reação escolhida e remove a lista de opção de emojis
             emojiElement.addEventListener("click", ()=> {
                 
                 console.log(mensagem);
                 console.log(emoji);
-                alternarEmoji(mensagem, emoji)
+                alternarEmoji(mensagem, emoji);
+
+                // Remove apenas a lista de opção de emojis, mantendo o "botão" de reação ativo.
+                areaEmojis.querySelectorAll(".emoji--opcao").forEach((el) => el.remove());
             });
 
             areaEmojis.appendChild(emojiElement);
 
         });
-
-        // document.addEventListener("click", function fecharMenu(event) {
-        //     if (!emojiElement.contains(event.target) && !event.target.classList.contains("emoji--reaction")) {
-        //         emojiElement.remove();
-        //         document.removeEventListener("click", fecharMenu);
-        //     }
-        // })
-
-        // listaEmojis.addEventListener("click", (event) => {
-        //     if (event.target.classList.contains("emoji")) {
-        //         const emojiSelecionado = event.target.textContent;
-        //         console.log("Emoji selecionado:", emojiSelecionado); // Aqui você pode salvar ou exibir o emoji
-                
-        //         // Restaurar o estado anterior (remover menu)
-        //         listaEmojis.remove();
-        //     }
-        // });
 
     };
 
