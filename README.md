@@ -2,7 +2,8 @@ Projeto ainda em construção no curso de programador Fullstack do O Novo Progra
 
 Projeto de recriação de um Chat, inspirado no Telegram
 
-![Captura de tela 2025-03-08 095508](https://github.com/user-attachments/assets/4109225e-4eaa-42f0-8010-8e789b371fd8)
+![Captura de tela 2025-03-08 103155](https://github.com/user-attachments/assets/35ec5dd7-2b73-4c81-9ab6-997fc78d0359)
+
 
 Utilizado HTML, CSS e JavaScript, o projeto possui algumas ações dinâmicas.
 Algumas respostas aleatórias vindas de um mini bot criado.
