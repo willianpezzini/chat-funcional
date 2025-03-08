@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Deixa lista de contatos vazia 
         divContatosElement.innerHTML = '';
 
-        // Filtra os contatos pelo nome, tranforma udo que foi digitado no input em letras minusculas.
+        // Filtra os contatos pelo nome, tranforma tudo que foi digitado no input em letras minusculas.
         // includes: Verifica de a string digitada no input está dentro do campo nome em um contato, dentro da lista de contatos.
         // Faz a busca utilizando o campo do nome do contato ou da ultima conversa com o contato
         const contatosFiltrados = listaDeContatos.filter((contato) => 
@@ -411,6 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
            divParentElement.addEventListener("click", () => {
             carregarMensagemContato(index);
+
            })
 
            divContatosElement.appendChild(divParentElement);
